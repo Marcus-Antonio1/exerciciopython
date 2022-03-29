@@ -1,0 +1,162 @@
+questão 1:
+
+print( ' alo mundo ' )
+
+
+
+questão 2:
+
+
+numero = float( input ( ' informe um numero: ' ))
+print( ' o numero informado foi ',numero )
+
+
+questão 3:
+
+
+numero = float( input ( ' informe um numero: ' ))
+print( ' o numero informado foi ',numero )
+
+
+questão 4: 
+
+
+
+nota1 = float(input(' informe a primeira nota: '))
+nota2 = float(input(' informe a segunda nota: '))
+nota3 = float(input(' informe a terceira nota: '))
+nota4 = float(input(' informe a quarta nota: '))
+media = (nota1 + nota2 + nota3 + nota4) / 4
+print( 'a media bimestral será de: ', media )
+
+
+questão 5:
+
+
+valor1 = float(input( ' diga o valor em metros: ' ))
+conversão = valor1 * 100
+print( ' o valor em metros convertido para centimetros será de: ', conversão, 'cm')
+
+
+
+questão 6: 
+
+
+raio = float(input('diga o valor do raio: '))
+area = 3.14 * (raio ** 2)
+print('a area desse circulo será igual a: ', area)
+
+
+questão 7:
+
+
+valor1 = 4.5
+areaQ = valor1 * valor1
+print('a area deste quadrado será de: ', areaQ)
+print('o dobro da area deste quadrado será de: ', areaQ * 2)
+
+
+questão 8: 
+
+
+valor1 = float(input( 'informe quanto voce ganha por hora: '))
+valor2 = float(input('informe quantas horas por mês você trabalha: '))
+salario = valor1 * valor2
+print('por mês você ganha o equivalente a, fora os auxilios', salario)
+
+
+questão 9:
+
+
+temperatura1 = float(input('informe a temperatura em farenheit: ' ))
+transformação = 5 *(temperatura1 - 32) / 9 ou temp1 - 32 /1.8
+print('a temperatura transformada para celsius será de: ', transformação)
+
+
+questão 10: 
+
+
+numero1 = float(input('informe o primeiro numero inteiro: '))
+numero2 = float(input('informe o segundo numero inteiro: '))
+numero3 = float(input('informe o numero real: '))
+conta1 = (numero1 *2) /  (numero2/2)
+print('o valor será de: ', conta1)
+conta2 = (numero1 *3) + numero3
+print('o valor será de: ', conta2)
+conta3 = numero3 ** 3
+print('o valor será de: ', conta3)
+
+
+questão 11:
+
+
+altura = float(input('diga a sua altura de acordo com o exemplo ex: (1.60): '))
+sexo = input('diga o seu sexo: ')
+if sexo == 'masculino':
+   ideal = (72.7*altura) - 58
+   print('o seu peso ideal será: ', ideal)
+elif sexo == 'feminino':
+   idealmulher = (62.1*altura) - 44.7
+   print ('o seu peso ideal será', idealmulher)
+ ======================================
+altura = float(input('digite a altura '))
+
+#Para homens: (72.7*h) –58
+#Para mulheres: (62.1*h) -44.7
+
+pesoIdealHomem = (72.7 * altura) - 58
+pesoIdealMulher = (62.1 * altura) - 44.7
+
+pesoIdealHomem = round(pesoIdealHomem,2)
+pesoIdealMulher = round(pesoIdealMulher,2)
+
+print('o peso ideal para um homem é ',pesoIdealHomem)
+
+print('o peso ideal para uma mulher é ',pesoIdealMulher)
+
+
+
+
+questão 12: 
+
+
+print(' o limite de peso permitido para não pagar multa é de 50kg ')
+print()
+print( 'o preço da multa por quilo excedente é de 4 reais' )
+print()
+peso = float(input( ' diga o peso do peixe pescado em kg: ' ))
+print()
+pesop = 50 
+multa = 4
+pesoe = peso - pesop
+#limite de peso 50kg multa de 4 reais se passar 
+excesso = pesoe * multa
+if peso > 50:
+   excesso = pesoe * multa
+   print( 'voce pagara isto pelo peso excedente do peixe', 
+   excesso, 'R$' )
+else:
+   print( 'ja que nao excedeu os 50kg voce nao pagara nada alem' )
+  
+
+questão 13: 
+
+valorHora = float(input('digite o valor da sua hora de trabalho '))
+
+horasTrabalhadasMes = float(input('digite a quantidade de horas realizadas no mês '))
+
+salarioBruto = valorHora * horasTrabalhadasMes
+
+valorIr = salarioBruto * 0.11
+valorInss = salarioBruto * 0.08
+valorSindicato = salarioBruto * 0.05
+
+descontos = valorIr + valorInss + valorSindicato
+
+salarioLiquido = salarioBruto - descontos
+
+print('salario bruto',salarioBruto)
+print('IR',valorIr)
+print('INSS',valorInss)
+print('Sindicato',valorSindicato)
+print('salario liquido',salarioLiquido)
