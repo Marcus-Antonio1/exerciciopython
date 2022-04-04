@@ -1,0 +1,44 @@
+for varX in range(1,11):
+  for varY in range(1,11):
+    print(varX, 'multiplicado por',varY)
+    print(varX * varY)
+
+
+#exercicio novo abaixo
+
+notas = [10,8,9,10,9]
+soma = 0
+quantidadeNotas = len(notas)
+
+for nota in notas:
+  soma = soma + nota
+
+media = soma / quantidadeNotas
+
+print('a media eh ', media)
+
+
+
+
+
+#exercicio novo abaixo
+
+frutas = ['fruta1','fruta2','fruta3','fruta4']
+
+for fruta in frutas:
+  print('a fruta foi ', fruta)
+
+print('a primeira fruta é ',frutas[0]) 
+
+primeiraFruta = frutas[0]
+print('a primeira fruta é ',primeiraFruta)
+
+frutas.append('fruta5')
+
+for fruta in frutas:
+  print('a fruta foi ', fruta)
+
+print(len(frutas))
+
+tamanhoLista = len(frutas)
+print('o meu carrinho tem ',tamanhoLista)
